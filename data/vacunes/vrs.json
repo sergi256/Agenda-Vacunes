@@ -1,0 +1,19 @@
+{
+  "id": "vrs",
+  "name": "Virus respiratori sincicial",
+  "applies_at": [
+    "0 mesos"
+  ],
+  "protects_against": [
+    "Infecció per virus respiratori sincicial"
+  ],
+  "infoextra": [
+    "Immunització de tots els infants menors de 12 mesos, en la seva primera temporada epidèmica del VRS, de la següent manera: nascuts i nascudes amb anterioritat a l’inici de la temporada epidèmica del VRS (entre abril i setembre), durant el mes de setembre-octubre, i nascuts i nascudes durant la temporada epidèmica de VRS (d’octubre a març), preferentment abans de l’alta al naixement."
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

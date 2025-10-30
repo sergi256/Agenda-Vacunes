@@ -1,0 +1,16 @@
+{
+  "id": "vph",
+  "name": "Virus del papil·loma humà",
+  "applies_at": [
+    "11-12 anys"
+  ],
+  "protects_against": [
+    "Infecció per virus del papil·loma humà"
+  ],
+  "schemes": [
+    "adolescents-7-18anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

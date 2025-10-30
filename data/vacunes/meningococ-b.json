@@ -1,0 +1,19 @@
+{
+  "id": "meningococ-b",
+  "name": "Meningococ B",
+  "applies_at": [
+    "2 mesos",
+    "4 mesos",
+    "6 mesos",
+    "11 mesos"
+  ],
+  "protects_against": [
+    "Malaltia per meningococ"
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

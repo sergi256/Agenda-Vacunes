@@ -1,0 +1,20 @@
+{
+  "id": "td",
+  "name": "Td",
+  "applies_at": [
+    "14 anys",
+    "40 anys"
+  ],
+  "protects_against": [
+    "Diftèria",
+    "Tètanus"
+  ],
+  "schemes": [
+    "infants-naixement-6anys",
+    "adolescents-7-18anys",
+    "adults-19-endavant"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

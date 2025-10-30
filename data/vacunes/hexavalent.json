@@ -1,0 +1,23 @@
+{
+  "id": "hexavalent",
+  "name": "Hexavalent",
+  "applies_at": [
+    "2 mesos",
+    "4 mesos",
+    "11 mesos"
+  ],
+  "protects_against": [
+    "Diftèria",
+    "Tètanus",
+    "Tos ferina",
+    "Poliomielitis",
+    "Haemophilus influenzae b",
+    "Hepatitis B"
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

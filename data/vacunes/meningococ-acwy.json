@@ -1,0 +1,19 @@
+{
+  "id": "meningococ-acwy",
+  "name": "Meningococ conjugada tetravalent (ACWY)",
+  "applies_at": [
+    "11-12 anys"
+  ],
+  "protects_against": [
+    "Malaltia per meningococ"
+  ],
+  "infoextra": [
+    "S’han de vacunar els adolescents d’11-12 anys d’edat que no hagin rebut cap dosi de la vacuna MACWY a partir dels 10 anys d’edat. També s’ha de fer repesca fins als 18 anys d’edat, inclosos."
+  ],
+  "schemes": [
+    "adolescents-7-18anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

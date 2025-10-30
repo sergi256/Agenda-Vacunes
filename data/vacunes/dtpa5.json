@@ -1,0 +1,21 @@
+{
+  "id": "dtpa5",
+  "name": "dTpa5",
+  "applies_at": [
+    "6 anys"
+  ],
+  "protects_against": [
+    "Diftèria",
+    "Tètanus",
+    "Tos ferina"
+  ],
+  "infoextra": [
+    "S’ha d’administrar la vacuna dTpa a les embarassades, en cada embaràs, a partir de les 27 setmanes, preferentment entre les setmanes 27 i 32."
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

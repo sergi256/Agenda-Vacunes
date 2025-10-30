@@ -1,0 +1,19 @@
+{
+  "id": "triple-virica",
+  "name": "Triple vírica",
+  "applies_at": [
+    "12 mesos",
+    "3-4 anys"
+  ],
+  "protects_against": [
+    "Xarampió",
+    "Rubèola",
+    "Parotiditis"
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

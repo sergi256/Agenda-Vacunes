@@ -33,16 +33,13 @@ dist-ssr
 docker-compose.yml
 
 .git
-*.md
 .vscode
 # ─────────────────────────────
 # Altres fitxers temporals
 # ─────────────────────────────
+temp
 *.swp
 *.swo
 .DS_Store
 Thumbs.db
-# ─────────────────────────────
-# Scripts locals
-# ─────────────────────────────
-dev.sh
+

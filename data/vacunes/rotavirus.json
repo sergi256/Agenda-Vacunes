@@ -1,0 +1,19 @@
+{
+  "id": "rotavirus",
+  "name": "Rotavirus",
+  "applies_at": [
+    "2 mesos"
+  ],
+  "protects_against": [
+    "Infecció per rotavirus"
+  ],
+  "infoextra": [
+    "Vacunació contra el rotavirus a partir dels 2 mesos d’edat i seguint la pauta segons la vacuna disponible."
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

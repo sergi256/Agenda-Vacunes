@@ -1,0 +1,20 @@
+{
+  "id": "herpes-zoster",
+  "name": "Herpes zòster",
+  "applies_at": [
+    "65 anys",
+    "80 anys"
+  ],
+  "protects_against": [
+    "Herpes zòster"
+  ],
+  "infoextra": [
+    "S’han d’administrar dues dosis de la vacuna contra l’herpes zòster a les persones que compleixin 65 anys o 80 anys."
+  ],
+  "schemes": [
+    "adults-19-endavant"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

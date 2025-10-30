@@ -1,0 +1,20 @@
+{
+  "id": "pneumococ-conjugada",
+  "name": "Pneumococ conjugada",
+  "applies_at": [
+    "2 mesos",
+    "4 mesos",
+    "11 mesos",
+    "65 anys"
+  ],
+  "protects_against": [
+    "Malaltia per pneumococ"
+  ],
+  "schemes": [
+    "infants-naixement-6anys",
+    "adults-19-endavant"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

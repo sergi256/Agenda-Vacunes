@@ -1,0 +1,16 @@
+{
+  "id": "meningococ-c",
+  "name": "Meningococ C conjugada",
+  "applies_at": [
+    "12 mesos"
+  ],
+  "protects_against": [
+    "Malaltia per meningococ"
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

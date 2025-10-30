@@ -1,0 +1,19 @@
+{
+  "id": "dtpa-pi",
+  "name": "DTPa-PI",
+  "applies_at": [
+    "15 mesos"
+  ],
+  "protects_against": [
+    "Diftèria",
+    "Tètanus",
+    "Tos ferina",
+    "Poliomielitis"
+  ],
+  "schemes": [
+    "infants-naixement-6anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

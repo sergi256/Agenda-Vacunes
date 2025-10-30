@@ -1,0 +1,19 @@
+{
+  "id": "sars-cov-2",
+  "name": "SARS-CoV-2",
+  "applies_at": [
+    "Anualment a partir dels 60 anys"
+  ],
+  "protects_against": [
+    "COVID-19"
+  ],
+  "infoextra": [
+    "Es recomana la vacunació contra el SARS-CoV-2 cada any durant la campanya de tardor, segons les recomanacions vigents (persones majors de 60 anys i altres amb condicions de risc)."
+  ],
+  "schemes": [
+    "adults-19-endavant"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

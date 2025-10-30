@@ -1,0 +1,17 @@
+{
+  "id": "grip",
+  "name": "Grip",
+  "applies_at": [
+    "Anualment a partir dels 6 mesos"
+  ],
+  "protects_against": [
+    "Grip"
+  ],
+  "schemes": [
+    "infants-naixement-6anys",
+    "adults-19-endavant"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}

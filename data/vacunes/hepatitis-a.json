@@ -1,0 +1,22 @@
+{
+  "id": "hepatitis-a",
+  "name": "Hepatitis A",
+  "applies_at": [
+    "15 mesos",
+    "3-4 anys",
+    "11-12 anys"
+  ],
+  "protects_against": [
+    "Hepatitis A"
+  ],
+  "infoextra": [
+    "Vacuna contra l’hepatitis A (HA) i vacuna contra la varicel·la (V): només s’han de vacunar als 11-12 anys els infants no immunitzats (no vacunats o sense antecedents de malaltia) o parcialment vacunats (la pauta vacunal consta de dues dosis)."
+  ],
+  "schemes": [
+    "infants-naixement-6anys",
+    "adolescents-7-18anys"
+  ],
+  "catchup": true,
+  "contraindications": null,
+  "notes": []
+}
