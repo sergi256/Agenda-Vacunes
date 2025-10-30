@@ -253,6 +253,11 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Beta Banner */}
+      <div className="bg-amber-500 text-white px-4 py-2 text-center text-sm font-medium">
+        ⚠️ Versió Beta en proves - No usar per decisions clíniques
+      </div>
+      
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4 py-6">
