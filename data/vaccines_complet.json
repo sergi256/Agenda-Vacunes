@@ -1,224 +1,236 @@
-[
-  {
-    "id": "hexavalent",
-    "name": "Hexavalent",
-    "applies_at": [
-      "2 mesos",
-      "4 mesos",
-      "11 mesos"
-    ],
-    "protects_against": [
-      "Diftèria",
-      "Tètanus",
-      "Tos ferina",
-      "Poliomielitis",
-      "Haemophilus influenzae b",
-      "Hepatitis B"
-    ]
+{
+  "metadata": {
+    "version": "2025.1",
+    "last_updated": "2025-10-31",
+    "source": "Departament de Salut - Generalitat de Catalunya",
+    "url": "https://salut.gencat.cat/ca/ambits_actuacio/linies_actuacio/vacunacions/"
   },
-  {
-    "id": "dtpa-pi",
-    "name": "DTPa-PI",
-    "applies_at": [
-      "15 mesos"
-    ],
-    "protects_against": [
-      "Diftèria",
-      "Tètanus",
-      "Tos ferina",
-      "Poliomielitis"
-    ]
-  },
-  {
-    "id": "dtpa5",
-    "name": "dTpa5",
-    "applies_at": [
-      "6 anys"
-    ],
-    "protects_against": [
-      "Diftèria",
-      "Tètanus",
-      "Tos ferina"
-    ],
-    "infoextra": [
-      "S’ha d’administrar la vacuna dTpa a les embarassades, en cada embaràs, a partir de les 27 setmanes, preferentment entre les setmanes 27 i 32."
-    ]
-  },
-  {
-    "id": "td",
-    "name": "Td",
-    "applies_at": [
-      "14 anys",
-      "40 anys"
-    ],
-    "protects_against": [
-      "Diftèria",
-      "Tètanus"
-    ]
-  },
-  {
-    "id": "pneumococ-conjugada",
-    "name": "Pneumococ conjugada",
-    "applies_at": [
-      "2 mesos",
-      "4 mesos",
-      "11 mesos",
-      "65 anys"
-    ],
-    "protects_against": [
-      "Malaltia per pneumococ"
-    ]
-  },
-  {
-    "id": "triple-virica",
-    "name": "Triple vírica",
-    "applies_at": [
-      "12 mesos",
-      "3-4 anys"
-    ],
-    "protects_against": [
-      "Xarampió",
-      "Rubèola",
-      "Parotiditis"
-    ]
-  },
-  {
-    "id": "meningococ-acwy",
-    "name": "Meningococ conjugada tetravalent (ACWY)",
-    "applies_at": [
-      "11-12 anys"
-    ],
-    "protects_against": [
-      "Malaltia per meningococ"
-    ],
-    "infoextra": [
-      "S’han de vacunar els adolescents d’11-12 anys d’edat que no hagin rebut cap dosi de la vacuna MACWY a partir dels 10 anys d’edat. També s’ha de fer repesca fins als 18 anys d’edat, inclosos."
-    ]
-  },
-  {
-    "id": "meningococ-b",
-    "name": "Meningococ B",
-    "applies_at": [
-      "2 mesos",
-      "4 mesos",
-      "6 mesos",
-      "11 mesos"
-    ],
-    "protects_against": [
-      "Malaltia per meningococ"
-    ]
-  },
-  {
-    "id": "meningococ-c",
-    "name": "Meningococ C conjugada",
-    "applies_at": [
-      "12 mesos"
-    ],
-    "protects_against": [
-      "Malaltia per meningococ"
-    ]
-  },
-  {
-    "id": "varicel·la",
-    "name": "Varicel·la",
-    "applies_at": [
-      "15 mesos",
-      "3-4 anys",
-      "11-12 anys"
-    ],
-    "protects_against": [
-      "Varicel·la"
-    ],
-    "infoextra": [
-      "Vacuna contra l’hepatitis A (HA) i vacuna contra la varicel·la (V): només s’han de vacunar als 11-12 anys els infants no immunitzats (no vacunats o sense antecedents de malaltia) o parcialment vacunats (la pauta vacunal consta de dues dosis)."
-    ]
-  },
-  {
-    "id": "hepatitis-a",
-    "name": "Hepatitis A",
-    "applies_at": [
-      "15 mesos",
-      "3-4 anys",
-      "11-12 anys"
-    ],
-    "protects_against": [
-      "Hepatitis A"
-    ],
-    "infoextra": [
-      "Vacuna contra l’hepatitis A (HA) i vacuna contra la varicel·la (V): només s’han de vacunar als 11-12 anys els infants no immunitzats (no vacunats o sense antecedents de malaltia) o parcialment vacunats (la pauta vacunal consta de dues dosis)."
-    ]
-  },
-  {
-    "id": "vph",
-    "name": "Virus del papil·loma humà",
-    "applies_at": [
-      "11-12 anys"
-    ],
-    "protects_against": [
-      "Infecció per virus del papil·loma humà"
-    ]
-  },
-  {
-    "id": "herpes-zoster",
-    "name": "Herpes zòster",
-    "applies_at": [
-      "65 anys",
-      "80 anys"
-    ],
-    "protects_against": [
-      "Herpes zòster"
-    ],
-    "infoextra": [
-      "S’han d’administrar dues dosis de la vacuna contra l’herpes zòster a les persones que compleixin 65 anys o 80 anys."
-    ]
-  },
-  {
-    "id": "rotavirus",
-    "name": "Rotavirus",
-    "applies_at": [
-      "2 mesos"
-    ],
-    "protects_against": [
-      "Infecció per rotavirus"
-    ],
-    "infoextra": [
-      "Vacunació contra el rotavirus a partir dels 2 mesos d’edat i seguint la pauta segons la vacuna disponible."
-    ]
-  },
-  {
-    "id": "vrs",
-    "name": "Virus respiratori sincicial",
-    "applies_at": [
-      "0 mesos"
-    ],
-    "protects_against": [
-      "Infecció per virus respiratori sincicial"
-    ],
-    "infoextra": [
-      "Immunització de tots els infants menors de 12 mesos, en la seva primera temporada epidèmica del VRS, de la següent manera: nascuts i nascudes amb anterioritat a l’inici de la temporada epidèmica del VRS (entre abril i setembre), durant el mes de setembre-octubre, i nascuts i nascudes durant la temporada epidèmica de VRS (d’octubre a març), preferentment abans de l’alta al naixement."
-    ]
-  },
-  {
-    "id": "grip",
-    "name": "Grip",
-    "applies_at": [
-      "Anualment a partir dels 6 mesos"
-    ],
-    "protects_against": [
-      "Grip"
-    ]
-  },
-  {
-    "id": "sars-cov-2",
-    "name": "SARS-CoV-2",
-    "applies_at": [
-      "Anualment a partir dels 60 anys"
-    ],
-    "protects_against": [
-      "COVID-19"
-    ],
-    "infoextra": [
-      "Es recomana la vacunació contra el SARS-CoV-2 cada any durant la campanya de tardor, segons les recomanacions vigents (persones majors de 60 anys i altres amb condicions de risc)."
-    ]
-  }
-]
+  "vaccines": [
+    {
+      "id": "hexavalent",
+      "name": "Hexavalent",
+      "applies_at": ["2 mesos", "4 mesos", "11 mesos"],
+      "protects_against": [
+        "Diftèria",
+        "Tètanus",
+        "Tos ferina",
+        "Poliomielitis",
+        "Haemophilus influenzae b",
+        "Hepatitis B"
+      ],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "dtpa-pi",
+      "name": "DTPa-PI",
+      "applies_at": ["15 mesos"],
+      "protects_against": [
+        "Diftèria",
+        "Tètanus",
+        "Tos ferina",
+        "Poliomielitis"
+      ],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "dtpa5",
+      "name": "dTpa5",
+      "applies_at": ["6 anys"],
+      "protects_against": [
+        "Diftèria",
+        "Tètanus",
+        "Tos ferina"
+      ],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "S'ha d'administrar la vacuna dTpa a les embarassades, en cada embaràs, a partir de les 27 setmanes, preferentment entre les setmanes 27 i 32."
+      ]
+    },
+    {
+      "id": "td",
+      "name": "Td",
+      "applies_at": ["14 anys", "40 anys"],
+      "protects_against": [
+        "Diftèria",
+        "Tètanus"
+      ],
+      "schemes": ["adolescents-7-18anys", "adults-19-64anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "pneumococ-conjugada",
+      "name": "Pneumococ conjugada",
+      "applies_at": ["2 mesos", "4 mesos", "11 mesos", "65 anys"],
+      "protects_against": ["Malaltia per pneumococ"],
+      "schemes": ["infants-naixement-6anys", "adults-65+"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "triple-virica",
+      "name": "Triple vírica",
+      "applies_at": ["12 mesos", "3-4 anys"],
+      "protects_against": [
+        "Xarampió",
+        "Rubèola",
+        "Parotiditis"
+      ],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "meningococ-acwy",
+      "name": "Meningococ conjugada tetravalent (ACWY)",
+      "applies_at": ["11-12 anys"],
+      "protects_against": ["Malaltia per meningococ"],
+      "schemes": ["adolescents-7-18anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "S'han de vacunar els adolescents d'11-12 anys d'edat que no hagin rebut cap dosi de la vacuna MACWY a partir dels 10 anys d'edat. També s'ha de fer repesca fins als 18 anys d'edat, inclosos."
+      ]
+    },
+    {
+      "id": "meningococ-b",
+      "name": "Meningococ B",
+      "applies_at": ["2 mesos", "4 mesos", "6 mesos", "11 mesos"],
+      "protects_against": ["Malaltia per meningococ"],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "meningococ-c",
+      "name": "Meningococ C conjugada",
+      "applies_at": ["12 mesos"],
+      "protects_against": ["Malaltia per meningococ"],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "varicel·la",
+      "name": "Varicel·la",
+      "applies_at": ["15 mesos", "3-4 anys", "11-12 anys"],
+      "protects_against": ["Varicel·la"],
+      "schemes": ["infants-naixement-6anys", "adolescents-7-18anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "Vacuna contra l'hepatitis A (HA) i vacuna contra la varicel·la (V): només s'han de vacunar als 11-12 anys els infants no immunitzats (no vacunats o sense antecedents de malaltia) o parcialment vacunats (la pauta vacunal consta de dues dosis)."
+      ]
+    },
+    {
+      "id": "hepatitis-a",
+      "name": "Hepatitis A",
+      "applies_at": ["15 mesos", "3-4 anys", "11-12 anys"],
+      "protects_against": ["Hepatitis A"],
+      "schemes": ["infants-naixement-6anys", "adolescents-7-18anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "Vacuna contra l'hepatitis A (HA) i vacuna contra la varicel·la (V): només s'han de vacunar als 11-12 anys els infants no immunitzats (no vacunats o sense antecedents de malaltia) o parcialment vacunats (la pauta vacunal consta de dues dosis)."
+      ]
+    },
+    {
+      "id": "vph",
+      "name": "Virus del papil·loma humà",
+      "applies_at": ["11-12 anys"],
+      "protects_against": ["Infecció per virus del papil·loma humà"],
+      "schemes": ["adolescents-7-18anys"],
+      "catchup": true,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "herpes-zoster",
+      "name": "Herpes zòster",
+      "applies_at": ["65 anys", "80 anys"],
+      "protects_against": ["Herpes zòster"],
+      "schemes": ["adults-65+"],
+      "catchup": false,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "S'han d'administrar dues dosis de la vacuna contra l'herpes zòster a les persones que compleixin 65 anys o 80 anys."
+      ]
+    },
+    {
+      "id": "rotavirus",
+      "name": "Rotavirus",
+      "applies_at": ["2 mesos"],
+      "protects_against": ["Infecció per rotavirus"],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": false,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "Vacunació contra el rotavirus a partir dels 2 mesos d'edat i seguint la pauta segons la vacuna disponible."
+      ]
+    },
+    {
+      "id": "vrs",
+      "name": "Virus respiratori sincicial",
+      "applies_at": ["0 mesos"],
+      "protects_against": ["Infecció per virus respiratori sincicial"],
+      "schemes": ["infants-naixement-6anys"],
+      "catchup": false,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "Immunització de tots els infants menors de 12 mesos, en la seva primera temporada epidèmica del VRS, de la següent manera: nascuts i nascudes amb anterioritat a l'inici de la temporada epidèmica del VRS (entre abril i setembre), durant el mes de setembre-octubre, i nascuts i nascudes durant la temporada epidèmica de VRS (d'octubre a març), preferentment abans de l'alta al naixement."
+      ]
+    },
+    {
+      "id": "grip",
+      "name": "Grip",
+      "applies_at": ["Anualment a partir dels 6 mesos"],
+      "protects_against": ["Grip"],
+      "schemes": ["infants-naixement-6anys", "adolescents-7-18anys", "adults-19-64anys", "adults-65+"],
+      "catchup": false,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": []
+    },
+    {
+      "id": "sars-cov-2",
+      "name": "SARS-CoV-2",
+      "applies_at": ["Anualment a partir dels 60 anys"],
+      "protects_against": ["COVID-19"],
+      "schemes": ["adults-65+"],
+      "catchup": false,
+      "contraindications": null,
+      "notes": [],
+      "infoextra": [
+        "Es recomana la vacunació contra el SARS-CoV-2 cada any durant la campanya de tardor, segons les recomanacions vigents (persones majors de 60 anys i altres amb condicions de risc)."
+      ]
+    }
+  ]
+}
