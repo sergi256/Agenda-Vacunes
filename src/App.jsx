@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { X, Info, Calendar, Shield, AlertCircle } from 'lucide-react';
+import { X, Info, Calendar, Shield, AlertCircle, ExternalLink } from 'lucide-react';
 
 // Mock data - reemplaça això carregant des de /data/vaccines_complet.json
 const MOCK_VACCINES = [
@@ -209,6 +209,24 @@ function VaccineModal({ vaccine, onClose }) {
               </div>
             </div>
           )}
+
+          {vaccine.official_link && (
+            <div>
+              <div className="flex items-center gap-2 mb-3">
+                <ExternalLink className="text-blue-600" size={20} />
+                <h3 className="font-semibold text-lg">Documentació oficial</h3>
+              </div>
+              <a
+                href={vaccine.official_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+              >
+                <span>Consultar fitxa tècnica (PDF)</span>
+                <ExternalLink size={16} />
+              </a>
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -216,26 +234,43 @@ function VaccineModal({ vaccine, onClose }) {
 }
 
 export default function App() {
-  const [vaccines, setVaccines] = useState(MOCK_VACCINES);
+  const [vaccines, setVaccines] = useState([]);
   const [selectedVaccine, setSelectedVaccine] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  // Descomenta això per carregar dades reals:
-  /*
   useEffect(() => {
     setLoading(true);
-    fetch('/data/vaccines_complet.json')
-      .then(res => res.json())
-      .then(data => {
-        setVaccines(data);
-        setLoading(false);
-      })
-      .catch(err => {
-        console.error('Error carregant vacunes:', err);
-        setLoading(false);
-      });
+    // Prova primer la ruta del projecte, després la de public
+    const possiblePaths = [
+      '/Agenda-Vacunes/data/vaccines_complet.json',  // GitHub Pages
+      '/data/vaccines_complet.json',                  // Local
+      './data/vaccines_complet.json'                  // Relatiu
+    ];
+    
+    const tryFetch = async (paths) => {
+      for (const path of paths) {
+        try {
+          const res = await fetch(path);
+          if (res.ok) {
+            const data = await res.json();
+            setVaccines(data.vaccines || data);
+            setLoading(false);
+            return;
+          }
+        } catch (err) {
+          continue;
+        }
+      }
+      throw new Error('No s\'han pogut carregar les dades de vacunes');
+    };
+    
+    tryFetch(possiblePaths).catch(err => {
+      console.error('Error carregant vacunes:', err);
+      setError(err.message);
+      setLoading(false);
+    });
   }, []);
-  */
 
   const vaccinesByAge = {};
   AGE_GROUPS.forEach(group => {
@@ -273,7 +308,26 @@ export default function App() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-6">
-        <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        {loading && (
+          <div className="bg-white rounded-lg shadow-md p-8 text-center">
+            <div className="animate-pulse">
+              <Shield size={48} className="mx-auto text-blue-600 mb-4" />
+              <p className="text-gray-600">Carregant dades de vacunes...</p>
+            </div>
+          </div>
+        )}
+
+        {error && (
+          <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
+            <AlertCircle size={48} className="mx-auto text-red-600 mb-4" />
+            <h3 className="text-lg font-semibold text-red-900 mb-2">Error carregant les dades</h3>
+            <p className="text-red-700">{error}</p>
+          </div>
+        )}
+
+        {!loading && !error && (
+          <>
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="px-6 py-4 bg-gray-50 border-b">
             <div className="flex items-center gap-2">
               <Info size={20} className="text-blue-600" />
@@ -375,6 +429,8 @@ export default function App() {
             ))}
           </div>
         </div>
+        </>
+        )}
       </main>
 
       {/* Modal */}
