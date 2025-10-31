@@ -3,7 +3,7 @@
     "version": "2025.1",
     "last_updated": "2025-10-31",
     "source": "Departament de Salut - Generalitat de Catalunya",
-    "url": "https://salut.gencat.cat/ca/ambits_actuacio/linies_actuacio/vacunacions/"
+    "url": "https://salutpublica.gencat.cat/ca/ambits/promocio/vacunacions/manual-vacunacions/versio-desglossada-capitols/"
   },
   "vaccines": [
     {
@@ -22,7 +22,8 @@
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_1.pdf"
     },
     {
       "id": "dtpa-pi",
@@ -38,7 +39,8 @@
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_1.pdf"
     },
     {
       "id": "dtpa5",
@@ -55,7 +57,8 @@
       "notes": [],
       "infoextra": [
         "S'ha d'administrar la vacuna dTpa a les embarassades, en cada embaràs, a partir de les 27 setmanes, preferentment entre les setmanes 27 i 32."
-      ]
+      ],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_1.pdf"
     },
     {
       "id": "td",
@@ -65,22 +68,24 @@
         "Diftèria",
         "Tètanus"
       ],
-      "schemes": ["adolescents-7-18anys", "adults-19-64anys"],
+      "schemes": ["infants-naixement-6anys", "adolescents-7-18anys", "adults-19-endavant"],
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_2.pdf"
     },
     {
       "id": "pneumococ-conjugada",
       "name": "Pneumococ conjugada",
       "applies_at": ["2 mesos", "4 mesos", "11 mesos", "65 anys"],
       "protects_against": ["Malaltia per pneumococ"],
-      "schemes": ["infants-naixement-6anys", "adults-65+"],
+      "schemes": ["infants-naixement-6anys", "adults-19-endavant"],
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_6.pdf"
     },
     {
       "id": "triple-virica",
@@ -95,7 +100,8 @@
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_10.pdf"
     },
     {
       "id": "meningococ-acwy",
@@ -108,7 +114,8 @@
       "notes": [],
       "infoextra": [
         "S'han de vacunar els adolescents d'11-12 anys d'edat que no hagin rebut cap dosi de la vacuna MACWY a partir dels 10 anys d'edat. També s'ha de fer repesca fins als 18 anys d'edat, inclosos."
-      ]
+      ],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_5.pdf"
     },
     {
       "id": "meningococ-b",
@@ -119,7 +126,8 @@
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_5.pdf"
     },
     {
       "id": "meningococ-c",
@@ -130,7 +138,8 @@
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_5.pdf"
     },
     {
       "id": "varicel·la",
@@ -143,7 +152,8 @@
       "notes": [],
       "infoextra": [
         "Vacuna contra l'hepatitis A (HA) i vacuna contra la varicel·la (V): només s'han de vacunar als 11-12 anys els infants no immunitzats (no vacunats o sense antecedents de malaltia) o parcialment vacunats (la pauta vacunal consta de dues dosis)."
-      ]
+      ],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_11.pdf"
     },
     {
       "id": "hepatitis-a",
@@ -156,7 +166,8 @@
       "notes": [],
       "infoextra": [
         "Vacuna contra l'hepatitis A (HA) i vacuna contra la varicel·la (V): només s'han de vacunar als 11-12 anys els infants no immunitzats (no vacunats o sense antecedents de malaltia) o parcialment vacunats (la pauta vacunal consta de dues dosis)."
-      ]
+      ],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_7.pdf"
     },
     {
       "id": "vph",
@@ -167,20 +178,22 @@
       "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://scientiasalut.gencat.cat/handle/11351/11454.2"
     },
     {
       "id": "herpes-zoster",
       "name": "Herpes zòster",
       "applies_at": ["65 anys", "80 anys"],
       "protects_against": ["Herpes zòster"],
-      "schemes": ["adults-65+"],
-      "catchup": false,
+      "schemes": ["adults-19-endavant"],
+      "catchup": true,
       "contraindications": null,
       "notes": [],
       "infoextra": [
         "S'han d'administrar dues dosis de la vacuna contra l'herpes zòster a les persones que compleixin 65 anys o 80 anys."
-      ]
+      ],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/manual-vacunacions-apartat-4-22.pdf"
     },
     {
       "id": "rotavirus",
@@ -188,12 +201,13 @@
       "applies_at": ["2 mesos"],
       "protects_against": ["Infecció per rotavirus"],
       "schemes": ["infants-naixement-6anys"],
-      "catchup": false,
+      "catchup": true,
       "contraindications": null,
       "notes": [],
       "infoextra": [
         "Vacunació contra el rotavirus a partir dels 2 mesos d'edat i seguint la pauta segons la vacuna disponible."
-      ]
+      ],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_20.pdf"
     },
     {
       "id": "vrs",
@@ -201,36 +215,39 @@
       "applies_at": ["0 mesos"],
       "protects_against": ["Infecció per virus respiratori sincicial"],
       "schemes": ["infants-naixement-6anys"],
-      "catchup": false,
+      "catchup": true,
       "contraindications": null,
       "notes": [],
       "infoextra": [
         "Immunització de tots els infants menors de 12 mesos, en la seva primera temporada epidèmica del VRS, de la següent manera: nascuts i nascudes amb anterioritat a l'inici de la temporada epidèmica del VRS (entre abril i setembre), durant el mes de setembre-octubre, i nascuts i nascudes durant la temporada epidèmica de VRS (d'octubre a març), preferentment abans de l'alta al naixement."
-      ]
+      ],
+      "official_link": null
     },
     {
       "id": "grip",
       "name": "Grip",
       "applies_at": ["Anualment a partir dels 6 mesos"],
       "protects_against": ["Grip"],
-      "schemes": ["infants-naixement-6anys", "adolescents-7-18anys", "adults-19-64anys", "adults-65+"],
-      "catchup": false,
+      "schemes": ["infants-naixement-6anys", "adults-19-endavant"],
+      "catchup": true,
       "contraindications": null,
       "notes": [],
-      "infoextra": []
+      "infoextra": [],
+      "official_link": "https://salutpublica.gencat.cat/web/.content/minisite/aspcat/promocio_salut/vacunacions/00manual_de_vacunacions/capitols_i_annexos_manual/apartat_4_vacunes_disponibles/Manual-Vacunacions-apartat-4_13.pdf"
     },
     {
       "id": "sars-cov-2",
       "name": "SARS-CoV-2",
       "applies_at": ["Anualment a partir dels 60 anys"],
       "protects_against": ["COVID-19"],
-      "schemes": ["adults-65+"],
-      "catchup": false,
+      "schemes": ["adults-19-endavant"],
+      "catchup": true,
       "contraindications": null,
       "notes": [],
       "infoextra": [
         "Es recomana la vacunació contra el SARS-CoV-2 cada any durant la campanya de tardor, segons les recomanacions vigents (persones majors de 60 anys i altres amb condicions de risc)."
-      ]
+      ],
+      "official_link": null
     }
   ]
 }
