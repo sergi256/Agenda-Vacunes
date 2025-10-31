@@ -4,8 +4,8 @@ Aplicació web per a professionals sanitaris amb el calendari oficial de vacunac
 
 ## 📄 Llicències
 
-- **Codi**: AGPLv3
-- **Dades**: ODbL
+- **Codi**: [AGPLv3](LICENSE)
+- **Dades**: [ODbL](public/data/LICENSE)
 
 ---
 
