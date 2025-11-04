@@ -131,10 +131,10 @@ function VaccineModal({ vaccine, onClose }) {
             </div>
           )}
 
-          {vaccine.link && (
+          {vaccine.official_link && (
             <div className="pt-2 border-t">
               <a 
-                href={vaccine.link} 
+                href={vaccine.official_link} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
@@ -256,13 +256,13 @@ export default function App() {
   useEffect(() => {
     // Intentar carregar dades reals del JSON
     setLoading(true);
-    fetch('/data/vaccines_complet.json')
+    fetch(`${import.meta.env.BASE_URL}/data/vaccines_complet.json`)
       .then(res => {
         if (!res.ok) throw new Error('Error carregant dades');
         return res.json();
       })
       .then(data => {
-        setVaccines(data);
+        setVaccines(Array.isArray(data.vaccines) ? data.vaccines : []);
         setLoading(false);
       })
       .catch(err => {
