@@ -17,104 +17,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { X, Info, Calendar, Shield, AlertCircle, ExternalLink } from 'lucide-react';
-
-// Mock data - reemplaça això carregant des de /data/vaccines_complet.json
-const MOCK_VACCINES = [
-  {
-    "id": "hexavalent",
-    "name": "Hexavalent",
-    "applies_at": ["2 mesos", "4 mesos", "11 mesos"],
-    "protects_against": ["Diftèria", "Tètanus", "Tos ferina", "Poliomielitis", "Haemophilus influenzae b", "Hepatitis B"]
-  },
-  {
-    "id": "dtpa-pi",
-    "name": "DTPa-PI",
-    "applies_at": ["15 mesos"],
-    "protects_against": ["Diftèria", "Tètanus", "Tos ferina", "Poliomielitis"]
-  },
-  {
-    "id": "dtpa5",
-    "name": "dTpa5",
-    "applies_at": ["6 anys"],
-    "protects_against": ["Diftèria", "Tètanus", "Tos ferina"],
-    "infoextra": ["S'ha d'administrar la vacuna dTpa a les embarassades, en cada embaràs, a partir de les 27 setmanes, preferentment entre les setmanes 27 i 32."]
-  },
-  {
-    "id": "td",
-    "name": "Td",
-    "applies_at": ["14 anys", "40 anys"],
-    "protects_against": ["Diftèria", "Tètanus"]
-  },
-  {
-    "id": "pneumococ-conjugada",
-    "name": "Pneumococ conjugada",
-    "applies_at": ["2 mesos", "4 mesos", "11 mesos", "65 anys"],
-    "protects_against": ["Malaltia per pneumococ"]
-  },
-  {
-    "id": "triple-virica",
-    "name": "Triple vírica",
-    "applies_at": ["12 mesos", "3-4 anys"],
-    "protects_against": ["Xarampió", "Rubèola", "Parotiditis"]
-  },
-  {
-    "id": "meningococ-b",
-    "name": "Meningococ B",
-    "applies_at": ["2 mesos", "4 mesos", "6 mesos", "11 mesos"],
-    "protects_against": ["Malaltia per meningococ"]
-  },
-  {
-    "id": "meningococ-c",
-    "name": "Meningococ C conjugada",
-    "applies_at": ["12 mesos"],
-    "protects_against": ["Malaltia per meningococ"]
-  },
-  {
-    "id": "meningococ-acwy",
-    "name": "Meningococ ACWY",
-    "applies_at": ["11-12 anys"],
-    "protects_against": ["Malaltia per meningococ"],
-    "infoextra": ["S'han de vacunar els adolescents d'11-12 anys d'edat que no hagin rebut cap dosi de la vacuna MACWY a partir dels 10 anys d'edat."]
-  },
-  {
-    "id": "varicel·la",
-    "name": "Varicel·la",
-    "applies_at": ["15 mesos", "3-4 anys", "11-12 anys"],
-    "protects_against": ["Varicel·la"]
-  },
-  {
-    "id": "hepatitis-a",
-    "name": "Hepatitis A",
-    "applies_at": ["15 mesos", "3-4 anys", "11-12 anys"],
-    "protects_against": ["Hepatitis A"]
-  },
-  {
-    "id": "vph",
-    "name": "VPH",
-    "applies_at": ["11-12 anys"],
-    "protects_against": ["Infecció per virus del papil·loma humà"]
-  },
-  {
-    "id": "herpes-zoster",
-    "name": "Herpes zòster",
-    "applies_at": ["65 anys", "80 anys"],
-    "protects_against": ["Herpes zòster"],
-    "infoextra": ["S'han d'administrar dues dosis de la vacuna contra l'herpes zòster a les persones que compleixin 65 anys o 80 anys."]
-  },
-  {
-    "id": "rotavirus",
-    "name": "Rotavirus",
-    "applies_at": ["2 mesos"],
-    "protects_against": ["Infecció per rotavirus"]
-  },
-  {
-    "id": "vrs",
-    "name": "VRS",
-    "applies_at": ["0 mesos"],
-    "protects_against": ["Infecció per virus respiratori sincicial"]
-  }
-];
+import { X, Info, Calendar, Shield, AlertCircle, Loader2, ExternalLink } from 'lucide-react';
 
 const AGE_GROUPS = [
   { id: '0m', label: '0m', sort: 0 },
@@ -228,20 +131,16 @@ function VaccineModal({ vaccine, onClose }) {
             </div>
           )}
 
-          {vaccine.official_link && (
-            <div>
-              <div className="flex items-center gap-2 mb-3">
-                <ExternalLink className="text-blue-600" size={20} />
-                <h3 className="font-semibold text-lg">Documentació oficial</h3>
-              </div>
-              <a
-                href={vaccine.official_link}
-                target="_blank"
+          {vaccine.link && (
+            <div className="pt-2 border-t">
+              <a 
+                href={vaccine.link} 
+                target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
               >
-                <span>Consultar fitxa tècnica (PDF)</span>
-                <ExternalLink size={16} />
+                <ExternalLink size={18} />
+                Consultar fitxa tècnica (PDF)
               </a>
             </div>
           )}
@@ -251,43 +150,127 @@ function VaccineModal({ vaccine, onClose }) {
   );
 }
 
+// Dades mock per desenvolupament i visualització
+const MOCK_VACCINES = [
+  {
+    "id": "hexavalent",
+    "name": "Hexavalent",
+    "applies_at": ["2 mesos", "4 mesos", "11 mesos"],
+    "protects_against": ["Diftèria", "Tètanus", "Tos ferina", "Poliomielitis", "Haemophilus influenzae b", "Hepatitis B"]
+  },
+  {
+    "id": "dtpa-pi",
+    "name": "DTPa-PI",
+    "applies_at": ["15 mesos"],
+    "protects_against": ["Diftèria", "Tètanus", "Tos ferina", "Poliomielitis"]
+  },
+  {
+    "id": "dtpa5",
+    "name": "dTpa5",
+    "applies_at": ["6 anys"],
+    "protects_against": ["Diftèria", "Tètanus", "Tos ferina"],
+    "infoextra": ["S'ha d'administrar la vacuna dTpa a les embarassades, en cada embaràs, a partir de les 27 setmanes, preferentment entre les setmanes 27 i 32."]
+  },
+  {
+    "id": "td",
+    "name": "Td",
+    "applies_at": ["14 anys", "40 anys"],
+    "protects_against": ["Diftèria", "Tètanus"]
+  },
+  {
+    "id": "pneumococ-conjugada",
+    "name": "Pneumococ conjugada",
+    "applies_at": ["2 mesos", "4 mesos", "11 mesos", "65 anys"],
+    "protects_against": ["Malaltia per pneumococ"]
+  },
+  {
+    "id": "triple-virica",
+    "name": "Triple vírica",
+    "applies_at": ["12 mesos", "3-4 anys"],
+    "protects_against": ["Xarampió", "Rubèola", "Parotiditis"]
+  },
+  {
+    "id": "meningococ-b",
+    "name": "Meningococ B",
+    "applies_at": ["2 mesos", "4 mesos", "6 mesos", "11 mesos"],
+    "protects_against": ["Malaltia per meningococ"]
+  },
+  {
+    "id": "meningococ-c",
+    "name": "Meningococ C conjugada",
+    "applies_at": ["12 mesos"],
+    "protects_against": ["Malaltia per meningococ"]
+  },
+  {
+    "id": "meningococ-acwy",
+    "name": "Meningococ ACWY",
+    "applies_at": ["11-12 anys"],
+    "protects_against": ["Malaltia per meningococ"],
+    "infoextra": ["S'han de vacunar els adolescents d'11-12 anys d'edat que no hagin rebut cap dosi de la vacuna MACWY a partir dels 10 anys d'edat."]
+  },
+  {
+    "id": "varicel·la",
+    "name": "Varicel·la",
+    "applies_at": ["15 mesos", "3-4 anys", "11-12 anys"],
+    "protects_against": ["Varicel·la"]
+  },
+  {
+    "id": "hepatitis-a",
+    "name": "Hepatitis A",
+    "applies_at": ["15 mesos", "3-4 anys", "11-12 anys"],
+    "protects_against": ["Hepatitis A"]
+  },
+  {
+    "id": "vph",
+    "name": "VPH",
+    "applies_at": ["11-12 anys"],
+    "protects_against": ["Infecció per virus del papil·loma humà"]
+  },
+  {
+    "id": "herpes-zoster",
+    "name": "Herpes zòster",
+    "applies_at": ["65 anys", "80 anys"],
+    "protects_against": ["Herpes zòster"],
+    "infoextra": ["S'han d'administrar dues dosis de la vacuna contra l'herpes zòster a les persones que compleixin 65 anys o 80 anys."]
+  },
+  {
+    "id": "rotavirus",
+    "name": "Rotavirus",
+    "applies_at": ["2 mesos"],
+    "protects_against": ["Infecció per rotavirus"]
+  },
+  {
+    "id": "vrs",
+    "name": "VRS",
+    "applies_at": ["0 mesos"],
+    "protects_against": ["Infecció per virus respiratori sincicial"]
+  }
+];
+
 export default function App() {
-  const [vaccines, setVaccines] = useState([]);
+  const [vaccines, setVaccines] = useState(MOCK_VACCINES); // Començar amb dades mock
   const [selectedVaccine, setSelectedVaccine] = useState(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false); // No carregar per defecte
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Intentar carregar dades reals del JSON
     setLoading(true);
-    // Prova primer la ruta del projecte, després la de public
-    const possiblePaths = [
-      '/Agenda-Vacunes/data/vaccines_complet.json',  // GitHub Pages
-      '/data/vaccines_complet.json',                  // Local
-      './data/vaccines_complet.json'                  // Relatiu
-    ];
-    
-    const tryFetch = async (paths) => {
-      for (const path of paths) {
-        try {
-          const res = await fetch(path);
-          if (res.ok) {
-            const data = await res.json();
-            setVaccines(data.vaccines || data);
-            setLoading(false);
-            return;
-          }
-        } catch (err) {
-          continue;
-        }
-      }
-      throw new Error('No s\'han pogut carregar les dades de vacunes');
-    };
-    
-    tryFetch(possiblePaths).catch(err => {
-      console.error('Error carregant vacunes:', err);
-      setError(err.message);
-      setLoading(false);
-    });
+    fetch('/data/vaccines_complet.json')
+      .then(res => {
+        if (!res.ok) throw new Error('Error carregant dades');
+        return res.json();
+      })
+      .then(data => {
+        setVaccines(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error('Error carregant vacunes, usant dades mock:', err);
+        // Mantenir les dades mock si falla la càrrega
+        setLoading(false);
+        // No mostrar error si tenim dades mock
+      });
   }, []);
 
   const vaccinesByAge = {};
@@ -303,6 +286,29 @@ export default function App() {
       }
     });
   });
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <Loader2 className="w-12 h-12 animate-spin text-blue-600 mx-auto mb-4" />
+          <p className="text-gray-600">Carregant dades del calendari vacunal...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center bg-red-50 border border-red-200 rounded-lg p-6 max-w-md">
+          <AlertCircle className="w-12 h-12 text-red-600 mx-auto mb-4" />
+          <h2 className="text-lg font-semibold text-gray-900 mb-2">Error carregant les dades</h2>
+          <p className="text-gray-600 text-sm">{error}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50">
@@ -326,26 +332,7 @@ export default function App() {
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 py-6">
-        {loading && (
-          <div className="bg-white rounded-lg shadow-md p-8 text-center">
-            <div className="animate-pulse">
-              <Shield size={48} className="mx-auto text-blue-600 mb-4" />
-              <p className="text-gray-600">Carregant dades de vacunes...</p>
-            </div>
-          </div>
-        )}
-
-        {error && (
-          <div className="bg-red-50 border border-red-200 rounded-lg p-6 text-center">
-            <AlertCircle size={48} className="mx-auto text-red-600 mb-4" />
-            <h3 className="text-lg font-semibold text-red-900 mb-2">Error carregant les dades</h3>
-            <p className="text-red-700">{error}</p>
-          </div>
-        )}
-
-        {!loading && !error && (
-          <>
-          <div className="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="px-6 py-4 bg-gray-50 border-b">
             <div className="flex items-center gap-2">
               <Info size={20} className="text-blue-600" />
@@ -358,50 +345,68 @@ export default function App() {
           {/* Calendar Grid */}
           <div className="overflow-x-auto">
             <div className="inline-block min-w-full">
-              {/* Desktop view */}
+              {/* Desktop view amb millores visuals */}
               <div className="hidden md:block">
-                <table className="min-w-full">
-                  <thead className="bg-gray-100">
-                    <tr>
-                      <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 sticky left-0 bg-gray-100">
-                        Vacuna
-                      </th>
-                      {AGE_GROUPS.map(group => (
-                        <th key={group.id} className="px-2 py-3 text-center text-xs font-semibold text-gray-700 min-w-[60px]">
-                          {group.label}
+                {/* Contenidor amb altura màxima per habilitar scroll vertical amb header sticky */}
+                <div className="max-h-[600px] overflow-y-auto relative">
+                  <table className="min-w-full border-collapse">
+                    <thead className="sticky top-0 z-10">
+                      <tr>
+                        <th className="px-4 py-3 text-left text-sm font-semibold text-gray-700 bg-gray-100 border-r border-gray-300">
+                          Vacuna
                         </th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-200">
-                    {vaccines.map(vaccine => (
-                      <tr key={vaccine.id} className="hover:bg-gray-50 transition">
-                        <td className="px-4 py-3 sticky left-0 bg-white">
-                          <button
-                            onClick={() => setSelectedVaccine(vaccine)}
-                            className="text-left hover:text-blue-600 font-medium text-sm"
+                        {AGE_GROUPS.map((group, index) => (
+                          <th 
+                            key={group.id} 
+                            className={`px-2 py-3 text-center text-xs font-semibold text-gray-700 min-w-[60px] border-r border-gray-200 ${
+                              index % 2 === 0 ? 'bg-gray-100' : 'bg-gray-50'
+                            }`}
                           >
-                            {vaccine.name}
-                          </button>
-                        </td>
-                        {AGE_GROUPS.map(group => {
-                          const hasVaccine = vaccinesByAge[group.id]?.some(v => v.id === vaccine.id);
-                          return (
-                            <td key={group.id} className="px-2 py-3 text-center">
-                              {hasVaccine && (
-                                <button
-                                  onClick={() => setSelectedVaccine(vaccine)}
-                                  className={`w-8 h-8 rounded-full ${VACCINE_COLORS[vaccine.id] || 'bg-gray-400'} hover:opacity-80 transition`}
-                                  title={vaccine.name}
-                                />
-                              )}
-                            </td>
-                          );
-                        })}
+                            {group.label}
+                          </th>
+                        ))}
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-gray-200">
+                      {vaccines.map((vaccine, rowIndex) => (
+                        <tr 
+                          key={vaccine.id} 
+                          className={`hover:bg-blue-50 transition ${
+                            rowIndex % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'
+                          }`}
+                        >
+                          <td className="px-4 py-3 sticky left-0 z-5 bg-white border-r border-gray-300">
+                            <button
+                              onClick={() => setSelectedVaccine(vaccine)}
+                              className="text-left hover:text-blue-600 font-medium text-sm"
+                            >
+                              {vaccine.name}
+                            </button>
+                          </td>
+                          {AGE_GROUPS.map((group, colIndex) => {
+                            const hasVaccine = vaccinesByAge[group.id]?.some(v => v.id === vaccine.id);
+                            return (
+                              <td 
+                                key={group.id} 
+                                className={`px-2 py-3 text-center border-r border-gray-200 ${
+                                  colIndex % 2 === 0 ? '' : 'bg-gray-100/100'
+                                }`}
+                              >
+                                {hasVaccine && (
+                                  <button
+                                    onClick={() => setSelectedVaccine(vaccine)}
+                                    className={`w-8 h-8 rounded-full ${VACCINE_COLORS[vaccine.id] || 'bg-gray-400'} hover:opacity-80 transition shadow-sm hover:shadow-md`}
+                                    title={vaccine.name}
+                                  />
+                                )}
+                              </td>
+                            );
+                          })}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               {/* Mobile view */}
@@ -447,8 +452,6 @@ export default function App() {
             ))}
           </div>
         </div>
-        </>
-        )}
       </main>
 
       {/* Modal */}
